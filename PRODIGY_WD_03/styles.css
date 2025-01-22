@@ -1,0 +1,93 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #0e5fa2; /* Light grey background */
+}
+
+/* Styling for the header */
+h1 {
+    margin: 20px;
+    color: #f8f5f5;
+}
+
+/* Styling for the game board */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    width: 310px;
+}
+
+/* Styling for individual cells */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff; /* White cells */
+    border: 2px solid #ccc; /* Light border for cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; /* Larger font size */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+}
+
+/* Styling for cells that are already taken */
+.cell.taken {
+    cursor: not-allowed;
+}
+
+/* Bright glowing effect for X */
+.x-glow {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
+
+/* Bright glowing effect for O */
+.o-glow {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+}
+
+/* Styling for X and O colors */
+.x-cell {
+    color: rgb(97, 246, 97); /* X will be green */
+    font-weight: bold; /* Make X bold */
+}
+
+.o-cell {
+    color: red; /* O will be red */
+    font-weight: bold; /* Make O bold */
+}
+
+/* Styling for the message display */
+#message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fffefe;
+}
+
+/* Styling for buttons */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #3fed4e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #32e528;
+}
+
+/* Styling for the scores display */
+#scores {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #faf8f8;
+}
