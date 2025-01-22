@@ -1,0 +1,142 @@
+/* Header and Navigation */
+header {
+    background: linear-gradient(to right, #FF7E5F, #FF6347);
+    padding: 40px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 96%;
+    transition: background-color 0.3s;
+}
+
+header.scrolled {
+    background: linear-gradient(to right, #555, #444);
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-top: 40px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    float: right;
+}
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Main Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 480px 20px;
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section::before{
+    content: "";
+    background-image: url(images/contact.jpg);
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-position: center;
+    width: 100%;
+    }
+
+.contact-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
